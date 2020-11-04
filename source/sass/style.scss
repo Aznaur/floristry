@@ -1,7 +1,5 @@
-h1 {
-  color: red;
-}
-
-p {
-  text-transform: uppercase;
-}
+@import "normalize";
+@import "variables";
+@import "global";
+@import "visually-hidden";
+@import "fonts";
