@@ -1,0 +1,24 @@
+.page-header {
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.page-header__logo {
+  display: block;
+
+
+  & img {
+    width: 83px;
+    height: 29px;
+    display: block;
+  }
+}
+
+
