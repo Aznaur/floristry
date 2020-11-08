@@ -1,0 +1,25 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.site-list__item {
+  & a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  &--active {
+    & a {
+      font-size: 25px;
+      line-height: 28px;
+      color: $fontColor;
+    }
+  }
+}
