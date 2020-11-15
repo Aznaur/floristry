@@ -1,0 +1,21 @@
+.slider__control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  & label {
+    width: 62.61px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+  }
+
+  & #feild_1:checked + label,
+    #feild_2:checked + label,
+    #feild_3:checked + label,
+    #feild_4:checked + label {
+      background-color: #ffffff;
+    }
+}
+
+
