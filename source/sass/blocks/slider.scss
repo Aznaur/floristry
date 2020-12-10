@@ -3,19 +3,27 @@
   display: flex;
   justify-content: space-between;
 
-  & label {
+  & div {
     width: 62.61px;
     height: 3px;
-    background: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50px;
+    transition: background-color 0.2s ease-in-out;
   }
 
-  & #feild_1:checked + label,
-    #feild_2:checked + label,
-    #feild_3:checked + label,
-    #feild_4:checked + label {
-      background-color: #ffffff;
-    }
+  & .slider__item--active {
+    background-color: #ffffff;
+  }
 }
 
+@media (min-width: $table-width){
+  .slider__item:nth-last-of-type(1),
+  .slider__item:nth-last-of-type(2){
+    display: none;
+  }
 
+  .slider__control {
+    width: 137.74px;
+    margin: 0 auto
+  }
+}

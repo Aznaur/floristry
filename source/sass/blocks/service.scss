@@ -16,6 +16,15 @@
   }
 }
 
+.service__title--desktop {
+  display: none;
+  position: absolute;
+  font-size: 220px;
+  line-height: 243px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .service__list {
   list-style: none;
   margin: 0;
@@ -26,4 +35,62 @@
   width: 288px;
   margin: 0 auto;
   overflow-x: hidden;
+}
+
+
+@media(min-width: $table-width) {
+  .service {
+    &__title {
+      position: relative;
+      font-size: 30px;
+      line-height: 33px;
+      text-align: center;
+      margin-bottom: 52px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 85.5px;
+        height: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ffffff;
+        bottom: -22px;
+      }
+    }
+  }
+
+  .service__wrapper {
+    width: 688px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .service {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__title {
+      margin-bottom: 120px;
+      position: relative;
+
+      &::before {
+        content: "каталог услуг";
+        position: absolute;
+        height: 243px;
+      }
+    }
+  }
+
+  .service__wrapper {
+    width: 1500px;
+  }
+
+  .service__title--desktop {
+    display: block;
+    width: 100%;
+    text-align: center;
+    opacity: 0.03;
+    z-index: -1;
+  }
 }

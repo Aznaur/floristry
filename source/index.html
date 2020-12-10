@@ -76,31 +76,31 @@
       </ul>
     </section>
     <section class="service">
-      <h2 class="service__title">Каталог услуг</h2>
+      <h2 class="service__title">Каталог услуг<span class="service__title--desktop">Каталог услуг</span></h2>
       <div class="service__wrapper slider">
         <ul class="service__list catalog">
-          <li class="catalog__item">
+          <li data-item="0" class="catalog__item catalog__item--active">
             <a href="#">
               <img src="img/catalog-1@1x.jpg" alt="Фото услуги">
               <span>01</span>
               <h3 class="catalog__title">букет невесты и свадебное оформление</h3>
             </a>
           </li>
-          <li class="catalog__item">
+          <li data-item="0" class="catalog__item">
             <a href="#">
               <img src="img/catalog-2@1x.jpg" alt="Фото услуги">
               <span>02</span>
               <h3 class="catalog__title">букеты на торжества</h3>
             </a>
           </li>
-          <li class="catalog__item">
+          <li data-item="1" class="catalog__item">
             <a href="#">
               <img src="img/catalog-3@1x.jpg" alt="Фото услуги">
               <span>03</span>
               <h3 class="catalog__title">композиции</h3>
             </a>
           </li>
-          <li class="catalog__item">
+          <li data-item="1" class="catalog__item">
             <a href="#">
               <img src="img/catalog-4@1x.jpg" alt="Фото услуги">
               <span>04</span>
@@ -109,24 +109,14 @@
           </li>
         </ul>
         <div class="slider__control">
-
-          <input class="visually-hidden" type="radio" name="slider_pic" checked id="feild_1">
-          <label for="feild_1"></label>
-
-
-          <input class="visually-hidden" type="radio" name="slider_pic" id="feild_2">
-          <label for="feild_2"></label>
-
-
-          <input class="visually-hidden" type="radio" name="slider_pic" id="feild_3">
-          <label for="feild_3"></label>
-
-
-          <input class="visually-hidden" type="radio" name="slider_pic" id="feild_4">
-          <label for="feild_4"></label>
+          <div data-numb="0" class="slider__item slider__item--active"></div>
+          <div data-numb="1" class="slider__item"></div>
+          <div data-numb="2" class="slider__item"></div>
+          <div data-numb="3" class="slider__item"></div>
         </div>
       </div>
     </section>
   </main>
+  <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
