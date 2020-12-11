@@ -40,6 +40,8 @@
 
 @media(min-width: $table-width) {
   .service {
+    padding-bottom: 100px;
+
     &__title {
       position: relative;
       font-size: 30px;
@@ -69,6 +71,7 @@
   .service {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 170px;
 
     &__title {
       margin-bottom: 120px;

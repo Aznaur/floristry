@@ -1,0 +1,133 @@
+.special-offer {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 288px;
+  //   height: 1px;
+  //   background-color: rgba(255, 255, 255, 0.2);
+  //   left: 0;
+  //   bottom: 0;
+  // }
+}
+
+.special-offer__text {
+  & h2 {
+    width: 200px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 170%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 15px;
+    color: #ffffff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 85.5px;
+      height: 1px;
+      background-color: #ffffff;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  & p {
+    font-size: 14px;
+    line-height: 170%;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  & a {
+    width: 220px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: block;
+    box-sizing: border-box;
+    background-color: #010001;
+    text-align: center;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+}
+
+@media (min-width: $table-width) {
+  .special-offer {
+    width: 453px;
+    text-align: center;
+  }
+
+  .special-offer__text {
+    & h2 {
+      width: 100%;
+      font-size: 30px;
+      margin-bottom: 40px;
+
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    & a {
+      padding-top: 17px;
+      padding-bottom: 17px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .special-offer {
+    display: flex;
+    justify-content: space-between;
+    width: 1215px;
+    text-align: start;
+  }
+
+  .special-offer__text {
+    width: 352px;
+    order: 1;
+
+    & h2 {
+      &::after {
+        left: 0;
+        transform: translateX(0);
+      }
+    }
+
+    & a {
+      margin: 0;
+    }
+  }
+
+  .special-offer__img {
+    order: 2;
+    width: 697px;
+    height: 410px;
+  }
+
+}
+
