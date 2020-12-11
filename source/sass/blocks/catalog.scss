@@ -9,17 +9,79 @@
   height: 392px;
   position: relative;
   flex-shrink: 0;
+  box-sizing: border-box;
+  display: flex;
 
   & a {
+    display: none;
+    width: 199px;
+    font-size: 0;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: none;
+    padding-top: 19px;
+    padding-bottom: 16px;
+    outline: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    color: #000000;
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+  }
+
+
+  & div {
     display: flex;
+    flex-grow: 1;
     position: relative;
     flex-direction: column;
     position: relative;
-    height: 392px;
     color: #ffffff;
     text-decoration: none;
-    // padding: 15px 20px 15px 20px;
     box-sizing: border-box;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:hover > a {
+      display: block;
+      font-size: 12px;
+    }
+  }
+
+
+
+  & span {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 80px;
+    position: relative;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 1px;
+      background-color: #ffffff;
+      bottom: 4px;
+      left: 0;
+
+    }
   }
 
   & h3 {
@@ -28,6 +90,9 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-weight: normal;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -53,7 +118,7 @@
     }
 
     & img {
-      height: auto;
+      height: 100%;
     }
   }
 }
