@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <a class="logo page-header__logo" href="#">
+  <header class="page-header page-header--card">
+    <a class="logo page-header__logo" href="index.html">
       <img src="img/logo-mobile.svg" alt="Логотип сайта">
     </a>
     <button type="button" class="page-header__open">меню</button>
@@ -39,7 +39,11 @@
     <h1 class="visually-hidden">Свадебная флористика</h1>
     <section class="card-product">
       <div class="card-product__img">
-        <img src="img/bouquets-1@1x.jpg" alt="image">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/bouquets-desctop1@1x.jpg 1x, img/bouquets-desctop2@2x.jpg">
+          <source media="(min-width: 768px)" srcset="img/bouquets-tablet-1@1x.jpg 1x, img/bouquets-tablet-2@2x.jpg 2x">
+          <img src="img/bouquets-1@1x.jpg" alt="image">
+        </picture>
       </div>
 
       <div class="card-product__text">
@@ -66,7 +70,7 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--card">
     <ul class="page-footer__list">
       <li>
         <a href="#">Cвадебная флористика</a>
@@ -124,3 +128,4 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+

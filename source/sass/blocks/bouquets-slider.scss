@@ -15,3 +15,23 @@
     }
   }
 }
+
+@media(min-width: $table-width) {
+  .bouquets-slider {
+    & li {
+      width: 145px;
+      height: 145px;
+      margin-right: 23px;
+    }
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .bouquets-slider {
+    & li {
+      width: 123px;
+      height: 123px;
+      margin-right: 23px;
+    }
+  }
+}
