@@ -3,15 +3,18 @@ let openMenu = document.querySelector('.page-header__open');
 let mainNav = document.querySelector('.main-nav');
 let logo = document.querySelector('.page-header__logo');
 let closeMenu = document.querySelector('.main-nav__close');
+let body = document.querySelector('body');
 
 openMenu.addEventListener('click', function () {
   mainNav.classList.add('main-nav__toggle');
   logo.classList.add('page-header__logo--menu');
+  body.style.overflow = 'hidden';
 });
 
 closeMenu.addEventListener('click', function () {
   mainNav.classList.remove('main-nav__toggle');
   logo.classList.remove('page-header__logo--menu');
+  body.style.overflow = 'visible';
 });
 
 // {
