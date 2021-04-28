@@ -77,8 +77,8 @@
   }
 
   .page-header__logo img {
-    width: 137px;
-    height: 47px;
+    width: 109px;
+    height: 37px;
   }
 
   .page-header__open {
@@ -113,11 +113,11 @@
   .page-header__open {
     width: 104px;
     height: auto;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 22px;
     color: $fontColor;
     text-transform: uppercase;
-    padding-left: 33px;
+    padding-left: 24px;
     letter-spacing: 0.06em;
 
     &::before {
@@ -126,7 +126,7 @@
       width: 23px;
       height: 1px;
       background-color: #ffffff;
-      bottom: 5px;
+      bottom: 8px;
       left: 0;
     }
 
@@ -135,7 +135,7 @@
       position: absolute;
       width: 23px;
       height: 1px;
-      top: 9px;
+      top: 7px;
       left: 0;
       background-color: #ffffff;
     }
