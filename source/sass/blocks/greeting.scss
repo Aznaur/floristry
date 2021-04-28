@@ -1,11 +1,14 @@
 .greeting {
   width: 100%;
-  min-height: 466px;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("../img/greeting--mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding-top: 103px;
   box-sizing: border-box;
   text-align: center;
 
@@ -23,6 +26,7 @@
     width: 238px;
     margin: 0 auto;
     margin-bottom: 35px;
+    padding-top: 100px;
   }
 
   &__bt {
@@ -42,8 +46,7 @@
 
 @media(min-width: $table-width) {
   .greeting {
-    min-height: 1024px;
-    padding-top: 331px;
+    min-height: 100vh;
     background-image: url("../img/greeting--tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -55,6 +58,7 @@
       font-size: 70px;
       line-height: 77px;
       margin-bottom: 82px;
+      padding-top: 200px;
     }
 
 
@@ -70,8 +74,6 @@
 @media(min-width: $desktop-width) {
   .greeting {
     position: relative;
-    min-height: 1044px;
-    padding-top: 323px;
     background-image: url("../img/greeting--desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -79,9 +81,9 @@
     }
 
     & h2 {
-      width: 818px;
-      font-size: 120px;
-      line-height: 132px;
+      width: 635px;
+      font-size: 80px;
+      line-height: 110px;
       margin-bottom: 80px;
     }
 
